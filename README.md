@@ -13,7 +13,7 @@ jradius test mschapv2
 java -classpath jradius.jar:jradius-dictionary.jar:lib/java-getopt-1.0.10.jar:lib/gnu-crypto.jar:lib/log4j-1.2.13.jar 
     net.sf.jradius.client.RadClient -a MSCHAPv2 192.168.0.6  sjhh123 passfile
 	
-# cat passfile
+## cat passfile
 User-Name = ttu1
 User-Password = 234557
 	
