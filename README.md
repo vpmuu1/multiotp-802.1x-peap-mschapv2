@@ -6,6 +6,7 @@ multiOTP tokens will work with any type of PAP/CHAP/MS-CHAP/MS-CHAPv2 based auth
 BUT multiOTP DO NOT support peap/mschapv2.
 
 FreeRADIUS support 802.1x eap/mschapv2,but no OTP
+
 I will upload patch for multiOTP's FreeRADIUS soon.....
 
 jradius test mschapv2
@@ -32,7 +33,7 @@ network={
         #eap=PEAP
         eap=TTLS
         identity="ttu1"
-#        anonymous_identity="anonymous"
+        anonymous_identity="anonymous"
         password="234557"
         phase2="autheap=MSCHAPV2"
 
