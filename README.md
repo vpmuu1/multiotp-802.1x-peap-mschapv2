@@ -13,20 +13,18 @@ jradius test mschapv2
 java -classpath jradius.jar:jradius-dictionary.jar:lib/java-getopt-1.0.10.jar:lib/gnu-crypto.jar:lib/log4j-1.2.13.jar 
     net.sf.jradius.client.RadClient -a MSCHAPv2 192.168.0.6  sjhh123 passfile
 	
-## cat passfile
+cat passfile
 User-Name = ttu1
 User-Password = 234557
-	
-	
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 test PEAP/mschapv2
 eapol_test -c otp -a 192.168.0.6 -p 1812 -s sjhh123
  cat /root/wpa_supplicant-2.6/cfg/otp
-#
-#   eapol_test -c peap-mschapv2.conf -s testing123
-#
+
+   eapol_test -c peap-mschapv2.conf -s testing123
+
 network={
         ssid="example"
         key_mgmt=WPA-EAP
@@ -37,8 +35,7 @@ network={
         password="234557"
         phase2="autheap=MSCHAPV2"
 
-        #
         #  Uncomment the following to perform server certificate validation.
-#       ca_cert="/etc/raddb/certs/ca.der"
+	#  ca_cert="/etc/raddb/certs/ca.der"
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
