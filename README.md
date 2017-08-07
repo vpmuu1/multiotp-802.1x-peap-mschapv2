@@ -7,7 +7,9 @@ BUT multiOTP DO NOT support peap/mschapv2.
 
 FreeRADIUS support 802.1x eap/mschapv2,but no OTP
 
-I will upload patch for multiOTP's FreeRADIUS soon.....
+patched file is:
+/root/freeradius-server-2.2.10/src/main/exec.c
+/root/freeradius-server-2.2.10/src/modules/rlm_exec/rlm_exec.c
 
 jradius test mschapv2
 java -classpath jradius.jar:jradius-dictionary.jar:lib/java-getopt-1.0.10.jar:lib/gnu-crypto.jar:lib/log4j-1.2.13.jar 
