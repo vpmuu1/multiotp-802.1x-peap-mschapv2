@@ -9,9 +9,9 @@ FreeRADIUS support 802.1x eap/mschapv2,but no OTP
 
 patched file is:
 
-/root/freeradius-server-2.2.10/src/main/exec.c
+/freeradius-server-2.2.10/src/main/exec.c
 
-/root/freeradius-server-2.2.10/src/modules/rlm_exec/rlm_exec.c
+/freeradius-server-2.2.10/src/modules/rlm_exec/rlm_exec.c
 
 jradius test mschapv2
 java -classpath jradius.jar:jradius-dictionary.jar:lib/java-getopt-1.0.10.jar:lib/gnu-crypto.jar:lib/log4j-1.2.13.jar 
